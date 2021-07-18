@@ -8,7 +8,7 @@ library(tnet)
 library(combinat)
 #creating a simulated network (N=25, JUVENILES 1:10, ADULTS 15:24)
 
-N <- 6#number of nodes
+N <- 25#number of nodes
 dyads <- expand.grid(ID1=1:25,ID2=1:25) #creating ties
 dyads <- dyads[which(dyads$ID1 != dyads$ID2),]#self-loops not allowed
 weights <- rbeta(nrow(dyads),1,15)#generating weights
